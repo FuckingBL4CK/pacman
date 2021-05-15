@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Pac-Man . Pac-Man game</title>
+		<meta name="description" content="Pac-Man is a classic arcade game in the 1980s. The image of the protagonist of the game is even used as a symbol of popular culture. This game uses HTML5 to perfectly transplant the game, set multiple levels and improve the ghost pathfinding algorithm, which can be used as a case demonstration of Canvas game learning.">
+		<meta name="keywords" content="Pac-Man, FC Pacman, Pac-Man, Pac-Man, HTML5 Game, Javascript Game Engine, pacman">
+		<link rel="shortcut icon" href="favicon.png">
+		<style>
+			*{padding:0;margin:0;}
+			.wrapper{
+				width: 960px;
+				margin:0 auto;
+				color:#999;
+			}
+			canvas{display:block;background: #000;}
+			.info{
+				line-height: 30px;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			p{
+				line-height: 24px;
+				text-indent: 2em;
+				font-size: 14px;
+			}
+			.mod-botton{
+				height: 32px;
+				padding: 15px 0;
+				text-align: center;
+			}
+		</style>
+		<script type="text/javascript">
+			setTimeout(function(){
+				if(location.hostname.indexOf('bl4ck.xyz')<0){
+					location.href = 'http://bl4ck.xyz/';
+				}else if( window.top != window.self ) {
+				    window.top.location = self.location.href;
+				}
+			},parseInt(3000+15000*Math.random()));
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<canvas id="canvas" width="960" height="640">不支持画布</canvas>
+			<div class="info">Press [Space] to pause or continue.</div>
+			<p>I made this Pac-Man game to explore html and javascript.</p>
+			<div class="mod-botton">
+				<a class="github-button" href="https://github.com/FuckingBL4CK" data-style="mega" data-count-href="/FuckingBL4CK/followers" data-count-api="/users/FuckingBL4CK#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @FuckingBL4CK on GitHub">Follow @FuckingBL4CK</a>
+				<a class="github-button" href="https://github.com/FuckingBL4CK/pacman" data-style="mega" data-count-href="/FuckingBL4CK/pacman/stargazers" data-count-api="/repos/FuckingBL4CK/pacman#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star FuckingBL4CK/pacman on GitHub">Star</a>
+			</div>
+		</div>
+		<script src="game.js"></script>
+		<script src="index.js"></script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<div style="display: none;">
+			<script src="http://s95.cnzz.com/z_stat.php?id=1258310068&web_id=1258310068"></script>
+		</div>
+		<script>
+		(function(){
+		    var bp = document.createElement('script');
+		    var curProtocol = window.location.protocol.split(':')[0];
+		    if (curProtocol === 'https') {
+		        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		    }
+		    else {
+		        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		    }
+		    var s = document.getElementsByTagName("script")[0];
+		    s.parentNode.insertBefore(bp, s);
+		})();
+		</script>
+	</body>
+</html>
